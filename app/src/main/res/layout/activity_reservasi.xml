@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reservasi">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ln_atas"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/bg_det">
+            <ImageView
+                android:id="@+id/iv_company"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/no_image"
+                android:scaleType="fitXY"
+                android:layout_width="250dp"
+                android:layout_height="250dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-45dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/ln_atas"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silahkan Di isi"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Cv"
+                    android:textStyle="bold"
+                    android:textColor="@color/hitam"/>
+                <TextView
+                    android:id="@+id/tv_namaCV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama CV.Sedot WC" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harga"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_hargaCV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.0"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Pemesan"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/namaUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama User"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No.HP"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/noHpUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0856xxxxxx"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Pemesan"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/alamatUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat User"/>
+
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Maksimal Booking 3 Jam sebelum Pemesanan"
+                    android:textColor="#f70303"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Reservasi"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:hint="Pilih Tanggal Reservasi"
+                        android:id="@+id/date"
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:editable="false"
+                        android:clickable="true"/>
+
+                    <Button
+                        android:id="@+id/btn_cek"
+                        android:background="@drawable/btn_cek"
+                        android:text="Cek"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_jam"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Jam Reservasi"
+                    android:textStyle="bold"
+                    android:textColor="@color/hitam"/>
+
+                <LinearLayout
+                    android:id="@+id/ln_jam"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jam : "/>
+
+                    <Spinner
+                        android:id="@+id/spinnerJam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"></Spinner>
+                </LinearLayout>
+
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:visibility="visible"-->
+                    <!--android:id="@+id/rc_jam"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="150dp">-->
+                <!--</android.support.v7.widget.RecyclerView>-->
+
+                <!--<EditText-->
+                    <!--android:visibility="visible"-->
+                    <!--android:id="@+id/edt_jam"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btn_pesan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan"
+                    android:layout_marginTop="10dp"
+                    android:elevation="5dp"
+                    android:textColor="#fff"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

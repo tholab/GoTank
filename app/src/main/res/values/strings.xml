@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Go-Tank User</string>
+    <string name="activity_maps">Map</string>
+    <string name="panduan"> \n 1. Pilih List Cv \n
+                            2. Pilih Paket Cv \n
+                            3. Kemudian Klik Pesan \n
+                            4. Jika Belum Login, Silahkan Login Terlebih
+        dahulu \n
+                            5. Lalu isikan Form Pemesanan \n
+                            6. Kemudian Tunggu dan akan mendapatkan Notifikasi \n
+                            7. Selesai \n</string>
+    <string name="next">LANJUT</string>
+    <string name="skip">LEWATI</string>
+    <string name="start">MULAI</string>
+
+    <string name="slide_1_title">LIST CV SEDOT WC</string>
+    <string name="slide_1_desc">Pilih CV Sedot WC Yang Akan Anda Pesan</string>
+
+
+    <string name="slide_2_title">RESERVASI</string>
+    <string name="slide_2_desc">Pilih Tanggal Dan Waktu Yang Diinginkan</string>
+
+    <string name="slide_3_title">BUKTI PEMBAYARAN</string>
+    <string name="slide_3_desc">Uplaod Butki Pembayaran Pemesanan</string>
+
+    <string name="slide_4_title">BERI ULASAN</string>
+    <string name="slide_4_desc">Ulasan Anda Berarti Bagi Kami</string>
+    <string name="LogOut">Log Out</string>
+    <string name="title_activity_pengaturan">PengaturanActivity</string>
+    <string name="deskripsi_cv">Melayani : \n
+                                Sedot WC, Limbah Pabrik, Saluran Air \n
+                                Tanpa Bongkar, Tidak Bau dengan Mesin Modern \n</string>
+    <string name="bukti_trasfer">* Lakukan Pembayaran Maksimal 1 jam dari sekarang dengan menyerahkan bukti transfer</string>
+
+
+    <string name="permission_dialog">Accessing Location Permissions required</string>
+    <string name="go_to_permissions_settings">Go to App settings and enable permissions</string>
+
+</resources>

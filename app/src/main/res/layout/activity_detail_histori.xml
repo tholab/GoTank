@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_histori">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ln_atas"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/bg_det">
+
+            <ImageView
+                android:id="@+id/iv_histori"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/no_image"
+                android:scaleType="fitXY"
+                android:layout_width="250dp"
+                android:layout_height="250dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_atas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-45dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/ln_atas"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Cv"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/namaCV_histori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NamaCV histori" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Supir"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/namaSupir_histori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="contoh" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Pesanan"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/alamat_histori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jl.Jarum Desa KedokanSayanf Rt03/04 Kec.Tarub Kab.Tegal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biaya Pesanan"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/biaya_histori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.400.000" />
+                <TextView
+                    android:id="@+id/judul_rekening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rekening"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/isi_rekening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BRI : 798201001978530" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status Pesanan"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/status_histori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum di Konfirmasi"
+                    android:textColor="@color/status"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/root_upload_bukti"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/cardview_atas"
+            app:cardElevation="5dp"
+            android:visibility="gone"
+
+            app:cardCornerRadius="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:textColor="@color/status"
+                    android:text="@string/bukti_trasfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Bukti Pembayaran"
+                        android:textColor="@color/hitam"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/upload_bukti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@android:drawable/ic_menu_camera"
+                        android:background="@drawable/btn_upload"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/icon_upload"
+                    android:id="@+id/gambar_bukti"/>
+
+                <Button
+                    android:onClick="btn_kirim_upload"
+                    android:id="@+id/kirim_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="kirim"
+                    android:layout_marginTop="10dp"
+                    android:elevation="5dp"
+                    android:textColor="#fff"
+                    android:background="#28c61d"/>
+                <Button
+                    android:id="@+id/btn_batal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Batalkan Pesanan"
+                    android:layout_marginTop="10dp"
+                    android:elevation="5dp"
+                    android:textColor="#fff"
+                    android:background="@color/status"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/root_komentar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/root_upload_bukti"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="3dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:padding="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sampaikan pendapat Anda"
+                    android:fontFamily="@font/mr"
+                    android:textColor="@color/hitam"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/til_komentar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_komentar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Deskripsikan pengalaman Anda (opsional)"
+                        android:textSize="17sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_posting"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/btn_cek"
+                    android:text="Posting"
+                    android:textColor="@color/putih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

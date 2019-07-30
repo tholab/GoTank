@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "359841308369",
+    "firebase_url": "https://gotankuser.firebaseio.com",
+    "project_id": "gotankuser",
+    "storage_bucket": "gotankuser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359841308369:android:776216bc214ef9fd",
+        "android_client_info": {
+          "package_name": "com.example.black.go_tankuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359841308369-ajvch34ebshm8iofo19ad15kvrpkllnu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.black.go_tankuser",
+            "certificate_hash": "ac830dd7862ebcd3090b554dc41456bb1b56a6f0"
+          }
+        },
+        {
+          "client_id": "359841308369-o3o9gp4s64vam96fcge3ghfhpt94sjcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJXD_dZu4uAcXMfIsJWezQwxYvccb5gDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359841308369-o3o9gp4s64vam96fcge3ghfhpt94sjcr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
